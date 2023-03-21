@@ -21,7 +21,7 @@
 }
 
 .gradient-dark {
-  background: fixed no-repeat url("gradient/gradient-dark.PNG");
+  background: no-repeat url("gradient/gradient-dark.PNG");
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .gradient-light {
-  background: fixed no-repeat url("gradient/gradient-light.PNG");
+  background: no-repeat url("gradient/gradient-light.PNG");
   background-size: cover;
 }
 

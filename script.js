@@ -4,7 +4,7 @@ const lightbulb = document.querySelector("#lightbulb");
 const primary = document.querySelectorAll(".color-primary-dark");
 const secondary = document.querySelectorAll(".color-secondary-dark");
 const tertiary = document.querySelectorAll(".color-tertiary-dark");
-const quarternary = document.querySelectorAll(".color-quarternary-dark");
+const gradient = document.querySelectorAll(".gradient-dark");
 const h1 = document.querySelectorAll("h1");
 const h2 = document.querySelectorAll("h2");
 const h3 = document.querySelectorAll("h3");
@@ -65,17 +65,18 @@ document.getElementById("switch").addEventListener("click", function () {
 
   tertiary.forEach((e) => e.classList.toggle("color-tertiary-light"));
 
-  quarternary.forEach((e) => e.classList.toggle("color-quarternary-light"));
+  gradient.forEach((e) => e.classList.toggle("gradient-light"));
 
   //Font color
-  h1.forEach((e) => e.classList.toggle("font-light"));
+  // h1.forEach((e) => e.classList.toggle("font-light"));
+  lightbulb.classList.toggle("font-light");
   h2.forEach((e) => e.classList.toggle("font-light"));
   h3.forEach((e) => e.classList.toggle("font-light"));
   p.forEach((e) => e.classList.toggle("font-light"));
   a.forEach((e) => e.classList.toggle("font-light"));
   ul.forEach((e) => e.classList.toggle("font-light"));
-  main_label.classList.toggle("font-label-light");
-  main_label.classList.toggle("main-label");
+  // main_label.classList.toggle("font-label-light");
+  // main_label.classList.toggle("main-label");
   contacts.classList.toggle("contacts-light");
   contacts.classList.toggle("contacts");
   tablinks.forEach((e) => e.classList.toggle("tablinks"));
@@ -94,10 +95,14 @@ function openTab(evt, tabName) {
 
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks.forEach((e) => e.classList.remove("active"));
+  tablinks.forEach((e) => e.classList.remove("gradient-dark"));
+  tablinks.forEach((e) => e.classList.remove("gradient-light"));
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.classList.toggle("active");
+  evt.currentTarget.classList.toggle("gradient-dark");
+  evt.currentTarget.classList.toggle("gradient-light");
 }
 
 ///////////////////Navbar on scroll

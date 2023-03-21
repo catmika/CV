@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/721d004744.js"
       crossorigin="anonymous"
@@ -13,7 +14,7 @@
   </head>
 
   <body>
-    <nav class="navbar color-secondary-dark">
+    <nav class="navbar color-primary-dark">
       <button id="switch">
         <i id="lightbulb" class="fa-regular fa-lightbulb"></i>
       </button>
@@ -23,15 +24,18 @@
       <a class="nav_link" href="#cont">Contact</a>
     </nav>
 
-    <section id="about" class="welcome-section color-primary-dark">
+    <section id="about" class="welcome-section gradient-dark">
       <h1>Hi I am Maksym</h1>
       <p class="main-label">a future web developer</p>
     </section>
 
-    <section id="ed" class="education color-tertiary-dark">
+    <section id="ed" class="education color-primary-dark">
       <h2 id="education-header">My educational background</h2>
       <div class="tab-container">
-        <button class="tablinks active" onclick="openTab(event, 'degree')">
+        <button
+          class="tablinks active gradient-dark"
+          onclick="openTab(event, 'degree')"
+        >
           Degree
         </button>
         <button class="tablinks" onclick="openTab(event, 'courses')">
@@ -120,15 +124,15 @@
       </div>
     </section>
 
-    <section id="proj" class="projects color-quarternary-dark">
-      <h2 class="projects-header">These are some of my study projects</h2>
+    <section id="proj" class="projects color-tertiary-dark">
+      <h2 class="projects-header">My study projects</h2>
       <div class="slider">
         <div class="project-tile slide" id="project1">
           <a target="_blank" href="https://codepen.io/catmikaaa/full/xxaYwjP">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/survey_form_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/survey_form.png"
+              src="img/survey_form_lazy.png"
+              data-src="img/survey_form.png"
               alt="Survey Form"
               width="380"
               height="370"
@@ -143,8 +147,8 @@
           <a target="_blank" href="https://codepen.io/catmikaaa/full/jOvZbpW">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/technical_documentation_page_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/technical_documentation_page.png"
+              src="img/technical_documentation_page_lazy.png"
+              data-src="img/technical_documentation_page.png"
               alt="Technical Documentation Page"
               width="380"
               height="370"
@@ -158,8 +162,8 @@
           <a target="_blank" href="https://codepen.io/catmikaaa/full/ZEMrbRL">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/tribute_page_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/tribute_page.png"
+              src="img/tribute_page_lazy.png"
+              data-src="img/tribute_page.png"
               alt="Tribute Page"
               width="380"
               height="370"
@@ -174,8 +178,8 @@
           <a target="_blank" href="https://pig-game-maksym.netlify.app/">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/pig_game_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/pig_game.png"
+              src="img/pig_game_lazy.png"
+              data-src="img/pig_game.png"
               alt="Pig Game"
               width="380"
               height="370"
@@ -190,8 +194,8 @@
           <a target="_blank" href="https://bankist-maksym.netlify.app/">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/bankist_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/bankist.png"
+              src="img/bankist_lazy.png"
+              data-src="img/bankist.png"
               alt="Bankist Page"
               width="380"
               height="370"
@@ -206,8 +210,8 @@
           <a target="_blank" href="https://mapty-maksym.netlify.app/">
             <img
               class="project-img lazy-img"
-              src="https://github.com/catmika/CV/blob/main/img/mapty2_lazy.png"
-              data-src="https://github.com/catmika/CV/blob/main/img/mapty2.png"
+              src="img/mapty_lazy.png"
+              data-src="img/mapty2.png"
               alt="Mapty App"
               width="380"
               height="370"
@@ -238,7 +242,7 @@
       ></a>
     </section>
 
-    <section id="cont" class="contacts color-tertiary-dark">
+    <section id="cont" class="contacts color-primary-dark">
       <h2 class="contacts-header">Let's work together...</h2>
       <p class="contacts-text"><em>How do you take your coffee?</em></p>
       <div class="profile-links">
@@ -273,15 +277,15 @@
       </div>
     </section>
 
-    <footer class="color-tertiary-dark">
-      <p>
+    <footer class="gradient-dark">
+      <p class="font-light">
         © Designed by
-        <a href="https://www.freecodecamp.org/"
+        <a class="font-light" href="https://www.freecodecamp.org/"
           >freeCodeCamp <i class="fa-brands fa-free-code-camp"></i
         ></a>
         and Maksym Andriiash
       </p>
-      <p>Created by Maksym Andriiash</p>
+      <p class="font-light">Created by Maksym Andriiash</p>
     </footer>
   </body>
 </html>

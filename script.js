@@ -19,6 +19,7 @@ const tablinks = document.querySelectorAll(".tablinks");
 const navbar = document.querySelector(".navbar");
 const slider__btns = document.querySelectorAll(".slider__btn");
 const projects_labels = document.querySelectorAll(".project-label");
+const projects_section = document.querySelector(".projects");
 
 const imgTargets = document.querySelectorAll("img[data-src]");
 const sectionTargets = document.querySelectorAll("section");
@@ -66,6 +67,10 @@ document.getElementById("switch").addEventListener("click", function () {
   tertiary.forEach((e) => e.classList.toggle("color-tertiary-light"));
 
   gradient.forEach((e) => e.classList.toggle("gradient-light"));
+
+  // projects_section.classList.remove("color-primary-light");
+  projects_section.classList.toggle("projects-light");
+  console.log(projects_section);
 
   //Font color
   // h1.forEach((e) => e.classList.toggle("font-light"));

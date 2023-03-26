@@ -265,11 +265,11 @@ ul {
 }
 
 .education a:hover {
-  color: var(--color-primary-dark);
+  color: grey;
 }
 
 .education a:hover .fa-brands {
-  color: var(--color-primary-dark);
+  color: grey;
 }
 
 /* Tab component style */

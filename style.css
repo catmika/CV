@@ -547,7 +547,7 @@ footer > p {
   }
 
   .nav_link {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: unset;
     padding: unset;
   }
@@ -575,10 +575,12 @@ footer > p {
 
   .tablinks {
     padding: 10px 10px;
+    font-size: 0.8rem;
   }
 
   .tablinks-light {
     padding: 10px 10px;
+    font-size: 0.8rem;
   }
 
   .projects {
@@ -648,7 +650,7 @@ footer > p {
   }
 
   .contacts-links {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 5px;
   }
 
